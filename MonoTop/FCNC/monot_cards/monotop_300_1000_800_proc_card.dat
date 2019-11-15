@@ -1,0 +1,4 @@
+import monotop_300_1000_800 
+generate       p p  > xd xd~ t    [QCD]
+add process    p p  > xd xd~ t~   [QCD]
+output monotop_300_1000_800
