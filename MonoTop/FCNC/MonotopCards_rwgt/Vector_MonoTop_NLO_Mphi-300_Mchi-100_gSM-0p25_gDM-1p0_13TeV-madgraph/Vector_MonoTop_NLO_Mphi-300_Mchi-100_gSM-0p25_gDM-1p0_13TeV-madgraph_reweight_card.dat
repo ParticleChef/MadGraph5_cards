@@ -1,0 +1,20 @@
+change mode NLO
+change helicity False
+change rwgt_dir ./rwgt
+#0 start of vector
+launch --rwgt_name=gdmv_0p1_gdma_0_gv_0p25_ga_0
+set dminputs gVXd  0.1
+set dminputs gVu31 0.25
+set dminputs gVd31 0.25
+set dminputs gAXd  0
+set dminputs gAu31 0
+set dminputs gAd31 0
+set DECAY 5000001 AUTO
+launch --rwgt_name=gdmv_0p25_gdma_0_gv_0p25_ga_0
+set dminputs gVXd  0.25
+set dminputs gVu31 0.25
+set dminputs gVd31 0.25
+set dminputs gAXd  0
+set dminputs gAu31 0
+set dminputs gAd31 0
+set DECAY 5000001 AUTO
