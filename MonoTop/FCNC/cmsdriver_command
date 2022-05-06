@@ -14,3 +14,6 @@ cmsDriver.py step5  --python_filename ${outfilename}_reco_cfg.py --eventcontent 
 
 MINI
 cmsDriver.py  --python_filename ${outfilename}_miniaod_cfg.py --eventcontent MINIAODSIM --customise Configuration/DataProcessing/Utils.addMonitoring --datatier       MINIAODSIM --fileout file:${outfilename}_miniaod.root --conditions 106X_mc2017_realistic_v9 --step PAT --procModifiers run2_miniAOD_UL --geometry DB:Extended --filein file:${outfilename}_RECO.root --era Run2_2017 --runUnscheduled --no_exec --mc -n 9999
+
+NANO
+cmsDriver.py NANO -s NANO --filein file:MC_2017_MiniAODv2.root --fileout file:MC_2017_NanoAODv9.root --mc --eventcontent NANOAODSIM --datatier NANOAODSIM --conditions 106X_mc2017_realistic_v9 --nThreads 4 --era Run2_2017,run2_nanoAOD_106Xv2 --python_filename MC_2017_NANOAODv9_cfg.py -n -1 --customise_commands="process.add_(cms.Service('InitRootHandlers', EnableIMT = cms.untracked.bool(False)));process.NANOAODSIMoutput.fakeNameForCrab = cms.untracked.bool(True);process.MessageLogger.cerr.FwkReport.reportEvery=10000" --no_exec
