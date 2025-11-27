@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # mass file
-massfile="masses.txt"
+massfile="masses_251124.txt"
 
 
 # Directories
