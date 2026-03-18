@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # mass file
-massfile="masses_251124.txt"
+massfile="masses_260313.txt"
 
 
 # Directories
-cardDir=MonotopCards_13p6_all
+cardDir=MonotopCards_13p6_test
 copyCardDir=mtop_cards
 copyModelDir=MonotopModels
 copyMassCards=Vector_MonoTop_NLO_Mphi-2500_Mchi-750_gSM-0p25_gDM-1p0_13TeV-madgraph
